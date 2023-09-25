@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>quote</title>
+<link rel="stylesheet" href="./static/index.css">
+<head>
+    <div class = 'image'><img src="./static/logo.png" alt=""></div>
+</head>
+
+<body>
+    <div class = 'forminfo'>
+        <form action="/" name="quoteform" id="quoteform" method="POST">
+            <input type="text" placeholder="input value" name="inputtext" id="inputtext" value="">
+            <input type="submit" value="submit">
+        </form>
+        {% if is_output %}
+            <div>
+                <p>The output is {{ output }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
