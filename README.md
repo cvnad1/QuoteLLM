@@ -1,1 +1,3 @@
 # QuoteLLM
+
+This web app uses Cohere's text generation model and finetunes it on the Quote-500k dataset. The dataset is actually a category classification task given author name and the quote itself. This task can be converted to a text generation task by combining the inputs as,``` write a quote by {author} on {categories}```. The output of text genrator will be the quote itself. Cohere is a easy to use LLM provider and notifies the user after completion of finetuning. An example of the task is, `quote like martin on romance` for which the output is, `I don't think there is any greater tragedy than the death of a romance.`
